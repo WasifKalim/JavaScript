@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Json</title>
+</head>
+<body>
+    <div class="container"></div>
+    <script>
+        // object
+        let jsonObj = {
+            name: "Harry",
+            channel: "CWH",
+            friend: "Goodness",
+            food: "Bhindi", // #bhindiLoverSquad
+        }
+        console.log(jsonObj);
+
+        // converting to string
+        let myJsonStr = JSON.stringify(jsonObj);
+        console.log(myJsonStr); // It is now string(properties)
+
+        myJsonStr = myJsonStr.replace('Harry', 'Larry');
+        console.log(myJsonStr);
+
+        newJsonObj = JSON.parse(myJsonStr);
+        console.log(newJsonObj);
+        // We can do 'JSON parse' in everywhere(front-end, back-end, etc);
+
+    </script>
+</body>
+</html>

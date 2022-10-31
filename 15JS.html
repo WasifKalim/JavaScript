@@ -1,0 +1,61 @@
+<!--  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Functions(ShortCut)</title>
+</head>
+<body>
+    <div class="container">
+        This is arrow functions tutorial.
+    </div>
+    <script>
+        // Arrow Function
+        // greet = ()=> {
+        //     console.log('Good morning');
+        // }
+        
+        // ShortCut
+        let greet = ()=> console.log('Good morning');
+        
+        // shortCut
+        let sum = (a, b)=>{
+            return a+b;
+        }
+        
+        // ShortCut k Bhi ShortCut
+        let sum2 = (a, b)=> a+b;
+
+        let half = a => a/2;
+        // In Console- half(a)
+
+        // function greet(){
+        //     console.log('Good morning');
+        // }
+        greet();
+
+        // setTimeout(() => {
+        //     console.log("We are inside settimeout");
+        // }, 3000);
+
+        setTimeout(() => {
+            console.log("we are inside timeout");
+        }, 3000);
+
+        let obj1={
+            greeting: "Good Morning ",
+            names: ["Harry", "Rohan", "SkillF", "DjKhiladi"],
+            speak(){
+                this.names.forEach((student) => {
+                    console.log(this.greeting + "kukdoo Koo " + student); // this.student for object greet and student is for names
+                });
+                // this(laccical this)-- this is the obj in which it is inside
+                // if arrow is used then 'this' is ouside(obj) else if arrow is not used then it inside(obj) of it
+            }
+        }
+        obj1.speak();
+    </script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!-- tut52 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays and Objects</title>
+</head>
+<body>
+    <div class="container">simple si html</div>
+    <script>
+        // myVar, employee, channel... are keys
+        let myVar= 34;
+        let myVar2 = "string";
+        let myVar3 = true;
+        let myVar4 = null;
+        let myVar5 = undefined;
+ 
+        // Object
+        let employee = {
+            name: "Harry",
+            salary: 10,
+            channel: "CodeWithHarry",
+            channel2: "ProgrammingWithHarry",
+            // we use double coat for space in channel .In this we can not "." in console writing(employee['channel 2'])
+            // "channel2": "ProgrammingWithHarry",
+        }
+        // console.log(employee)
+      
+        // Array below
+        // let names = [1, 2, 4, "Harry"];
+        // console.log(names[2]);
+
+        // new is a way of defining objects
+        // let names = new Array(1, 2, 4, "Harry", undefined);
+
+        // it means array having two elements
+        let names = new Array(33, 23);
+        
+        // It means array having 23 elements
+        // let names = new Array(23);
+        
+        // names = names.sort(); // to sort
+        names.push("this is pushed"); // push value in last
+        console.log(names);
+    </script>
+</body>
+</html>
+
+<!-- In Console:
+       employee.channel or employee[channel]-- both are same -->

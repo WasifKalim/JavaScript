@@ -1,0 +1,39 @@
+<!-- tut49 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings and String Methods</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Lorem ipsum dolor sit.</h1>
+        <div id="content"></div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores quas delectus aspernatur quae, labore atque. Ullam error quo ut voluptatem, facere harum alias unde architecto minus adipisci. Eos perspiciatis harum rem sapiente laudantium minima.</p>
+    </div>
+    <script>
+        // use single or double quot
+        // var string = 'text';
+        var string = 'thi"s';
+        var name = 'Harry';
+        var channel = 'CodeWithHarry';
+        var message = 'Harry is a good boy';
+        // ` is called backticks
+        var temp = `${name} is a 'nice' person "and" he has a channel called ${channel}`;
+        // console.log(string + name +'\n' + message);
+        // console.log(temp);
+        
+        // var len = name.length;
+        // console.log(`Length of name is ${len}`);
+
+        // \t means space in output
+        // console.log("Hello World\\nHarry\tand");
+        
+        var y = new String("this"); // saved in array
+        console.log(y);
+        document.getElementById('content').innerHTML = '<h3>this is an h3 heading</h3>';// to insert html
+    </script>
+</body>
+</html>

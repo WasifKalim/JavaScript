@@ -1,0 +1,74 @@
+<!-- Revised -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Dates</title>
+    <style>
+        
+        .container{
+            font-size: 15px;
+            background-color: blanchedalmond;
+            color: rgb(62, 196, 184);
+            border: 2px solid grey;
+            padding: 34px;
+            margin: 4px;
+            border-radius: 15px;
+            width: 35%;
+            cursor: pointer;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <span id="time"></span>
+    </div>
+    <script>
+        console.log("This is date time tutorial");
+        let now = new Date();
+        console.log(now);
+
+        // give time w.r.t. made of html function
+        let dt = new Date(1000);
+        console.log(dt);
+
+        // let newDate = new Date("2029-09-30");
+        // console.log(newDate);
+
+        // These are constructors
+        // let newDate = new Date(year, month, date, hours, minutes, seconds, milliseconds);
+        let newDate = new Date(3020, 6, 7, 9, 3, 2, 34);
+        console.log(newDate);
+
+        let yr = newDate.getFullYear();
+        console.log("The year is", yr);
+
+        let dat = newDate.getDate();
+        console.log("The date is ", dat);
+
+        let month = newDate.getMonth();
+        console.log("The month is ", month);
+
+        let hours = newDate.getHours();
+        console.log("The hour is ", hours);
+
+        // it has auto correction(calculate)
+        newDate.setDate(43);
+        newDate.setMinutes(29);
+        console.log(newDate);
+        setInterval(updateTime, 1000);
+
+
+        function updateTime(){
+            time.innerHTML = new Date();
+        }
+    </script>
+</body>
+</html>
+<!-- When you become a Good Web Devolper
+    Then see how does JS browser work, JS Engine Work  -->
+    <!-- JS k back-end processing  -->

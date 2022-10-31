@@ -1,0 +1,53 @@
+<!-- tut56 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- DOM(Document Object Mode) -->
+    <title>Manipulating DOM</title>
+</head>
+<body>
+    <div Id = "main" class="container">
+        <ul id = "nav">
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>More about us</li>
+            <li>Contact Us</li>
+        </ul>
+    </div>
+    <div class="container">
+        This is another container
+    </div>
+    <script>
+        // get code in console
+        let main = document.getElementById('main');
+        console.log(main);
+
+        // We can change html using Console(JS) by Id
+        // It print the element by id
+        let nav = document.getElementById('nav');
+        console.log('nav');
+        
+        // It returns all element by same class name
+        let container = document.getElementsByClassName('container')
+        console.log(container);
+         
+        // let sel = document.querySelector('.container');
+        // console.log("Selectors returns ", sel);
+         
+        // It returns the container in console as array 
+        let sels = document.querySelectorAll('#nav>li');
+        console.log("Selectors returns ", sels);
+
+        // We have to mainly do get query by classname
+
+        // In Console
+        // sels[0].innerHTML = "Inserted";
+        // then it will be inserted in HTML in begining
+
+    </script>
+</body>
+</html>

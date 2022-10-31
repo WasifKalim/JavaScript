@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Events</title>
+</head>
+<body>
+    <!-- Browser events:
+    clicks
+    contextmenu
+    mouseover/mouseout
+    mousedown/mouseup
+    mousemove
+
+    submit
+    focus
+    DOMContentLoaded
+
+    transition-->
+
+    <div class="container">
+        <h1>This is heading </h1>
+        <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, odio amet reiciendis mollitia provident fugit iusto molestias tempore laudantium doloribus. Nemo, repellat sed quibusdam natus tenetur dolorem eos vitae quaerat rerum omnis iste provident corrupti molestias quos optio aut nihil quod ab dignissimos ullam. Perspiciatis dolores, esse maxime praesentium facilis ducimus officiis explicabo nulla accusantium, ipsum atque deserunt aliquid harum, dolorum corrupti! Sunt at provident voluptate cumque repellendus dolorum assumenda voluptates, ipsam labore ratione sit harum exercitationem quisquam qui ducimus doloremque odio soluta veritatis ut quis quos esse nulla. Dignissimos vero quia nisi impedit ut possimus reiciendis volup aut est?</p>
+    </div>
+    <button id="btn" onclick="toggleHide()">Show/Hide</button>
+    <script>
+    
+        let para = document.getElementById('para');
+        para.addEventListener('mouseover', function run(){
+            alert('Mouse Inside');
+            console.log('Mouse Inside');
+        });
+
+        para.addEventListener('mouseout', function run(){
+            alert('Mouse now outside')
+            console.log('Mouse went outside');
+        });
+
+        function toggleHide(){
+            // it takes automatically para(mordern)
+            let btn = document.getElementById('btn');
+            let para = document.getElementById('para');
+            // let para= 2;--> it will show undefined
+            if(para.style.display != 'none'){
+            para.style.display = 'none';
+            }
+            else{
+                para.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>
+<!-- Event has fired means the event has occured -->
